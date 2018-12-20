@@ -10,6 +10,7 @@ import {
     TouchableOpacity,
     TouchableWithoutFeedback,
     View,
+    Image
 } from 'react-native';
 import PropTypes from 'prop-types';
 import isEqual from 'lodash.isequal';
@@ -32,6 +33,7 @@ export default class RNPickerSelect extends PureComponent {
             key: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
             color: ColorPropType,
         }),
+        iconImage: PropTypes.any,
         disabled: PropTypes.bool,
         itemKey: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         style: PropTypes.shape({}),
@@ -300,8 +302,9 @@ export default class RNPickerSelect extends PureComponent {
         if (hideIcon) {
             return null;
         }
+        return <Image source={iconImage} style={defaultStyles.icon}/>
 
-        return <View testID="icon_ios" style={[defaultStyles.icon, style.icon]} />;
+        //return <View testID="icon_ios" style={[defaultStyles.icon, style.icon]} />;
     }
 
     renderTextInputOrChildren() {
