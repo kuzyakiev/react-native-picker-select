@@ -478,13 +478,9 @@ const defaultStyles = StyleSheet.create({
     },
     icon: {
         position: 'absolute',
-        backgroundColor: 'transparent',
         borderTopWidth: 10,
-        borderTopColor: 'gray',
         borderRightWidth: 10,
-        borderRightColor: 'transparent',
         borderLeftWidth: 10,
-        borderLeftColor: 'transparent',
         width: 0,
         height: 0,
         top: 25,
