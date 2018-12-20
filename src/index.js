@@ -66,6 +66,7 @@ export default class RNPickerSelect extends PureComponent {
             value: null,
             color: '#9EA0A4',
         },
+        iconImage: null,
         disabled: false,
         itemKey: null,
         style: {},
@@ -297,7 +298,7 @@ export default class RNPickerSelect extends PureComponent {
     }
 
     renderIcon() {
-        const { hideIcon, style } = this.props;
+        const { hideIcon, style, iconImage } = this.props;
 
         if (hideIcon) {
             return null;
