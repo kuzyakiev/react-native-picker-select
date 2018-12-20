@@ -487,7 +487,7 @@ const defaultStyles = StyleSheet.create({
         borderLeftColor: 'transparent',
         width: 0,
         height: 0,
-        top: 30,
+        top: 25,
         right: 10,
     },
     modalViewTop: {
